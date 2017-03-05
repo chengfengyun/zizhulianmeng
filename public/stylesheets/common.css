@@ -1,0 +1,70 @@
+body {
+    padding-top: 30px;
+    width: 1240px;
+    margin: 0 auto;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 1240px !important;
+}
+
+.menu ul li {
+    float: left;
+    list-style: none;
+    height: 100px;
+    letter-spacing: 1.2px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 25px 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:visited {
+    /*padding: 20px 10px 20px 10px;*/
+    background-color: dodgerblue;
+}
+
+.active {
+    background: dodgerblue;
+}
+
+.search {
+    list-style: none;
+}
+
+.search {
+    padding: 0;
+}
+
+.search li {
+    padding: 20px 5px;
+    float: left;
+}
+
+.search_input {
+    /*width: 90%;*/
+    background: #F6F7CB;
+}
+
+.search_icon {
+    font-size: 32px;
+    color: lightgray;
+}
+
+
+/*footer*/
+
+.divideLine {
+    /*height: 1px;*/
+    margin-top: 50px;
+    border: 0.1px solid grey;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 15px;
+}

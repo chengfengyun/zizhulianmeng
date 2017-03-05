@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hello, World</title>
+    <style type="text/css">
+        .index {
+            border: 2px solid #ccc;
+            display: block;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="blog"></div>
+    <a href="" id="artical1">link</a>
+</body>
+
+<script>
+    var data = {
+        "data": [{
+            "uid": 1
+        }, {
+            "uid": 2
+        }]
+    }
+
+
+    var oParent = document.getElementById('blog'); // 父级对象	 
+    for (var i = 0; i < data.data.length; i++) {
+        var index = document.createElement('div'); //添加 元素节点
+        index.className = 'index'; //添加 类名 name属性
+        oParent.appendChild(index); //添加 子节点
+
+        (function() {
+            var item = data.data[i];
+            index.onclick = function() {
+                url(item);
+            }
+        })();
+
+    }
+
+    function url(obj) {
+        alert(obj.uid);
+        // document.write(obj.uid);
+        // location.href='article.php?uid=' + obj.uid;
+        // location.href = 'localhost:3000';
+        var article = document.getElementById("artical1");
+        with(a.style) {
+            color = red;
+
+        }
+        document.getElementById("artical1").innerHTML = "localhost:3000" + obj.uid;
+
+    };
+</script>
+
+</html>

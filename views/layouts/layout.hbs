@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>{{title}}</title>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head row">
+        <div class="col-xs-1">
+          <img src="images/common/logo.png" width="80px" height="80px" class="img-round" alt="logo">
+        </div>
+        <div class="col-xs-8">
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="/" class="menu_bg_index" >首页</a></li>
+              <li><a href="/centerProfile" class="menu_bg_center" >中心简介</a></li>
+              <li><a href="/fundingNews" class="menu_bg_news" >资助新闻</a></li>
+              <li><a href="/notice" class="menu_bg_notice">通知公告</a></li>
+              <li><a href="/educationSchool" class="menu_bg_education" >育人学堂</a></li>
+              <li><a href="/friendshipLink" class="menu_bg_link">友情链接</a></li>
+              {{!--<li><a href="/messageBoard" class="menu_bg_message">留言板</a></li>--}}
+            </ul>
+          </div>
+        </div>
+        {{!--<div class="clearfix"></div>--}}
+        <div class="col-xs-3 search">
+          <form action="" method="POST">
+            <ul class='search'>
+              <li><input type="text" class="form-control search_input" placeholder="搜索" ></li>
+              <li><a href="#"><i class="glyphicon glyphicon-search search_icon"></i></a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      {{{body}}}
+      {{!--footer--}}
+      <div class="divideLine"></div>
+      <div class="footer">
+        <p>学生处 学生资助管理中心 版权所有 Copyright &copy 2011-2012</p>
+        <p>预约电话：0411-84723228</p>
+        <p>地址: 辽宁省大连海事大学综合楼713</p>
+        <p>
+          <a href="#">站长统计</a> |
+          <a href="/managerLogin">管理登录</a>
+        </p>
+      </div>
+    </div>
+   
+    <script>
+      $("#menu ul li a").click(
+        function(){
+         //  {{!--$(this).addClass('active');--}}
+        }
+      )
+    </script>
+  </body>
+</html>

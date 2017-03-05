@@ -1,0 +1,82 @@
+.menu_bg_notice {
+    background: dodgerblue;
+}
+
+.main {
+    background: url(/images/notice/bg.jpg) no-repeat;
+    background-size: 1240px 600px;
+    width: 1240px;
+    height: 520px;
+    opacity: 1;
+    color: black;
+    opacity: 0.95;
+    padding: 0;
+}
+
+.content {
+    padding: 0;
+}
+
+.content table {
+    background: #9BB9D5;
+    opacity: .9;
+    width: 100%;
+}
+
+.red_bg {
+    height: 50px;
+    background: #A40000;
+    opacity: 0.96;
+    width: 100%;
+    /*background: #FF0000;*/
+}
+
+.content table tr td {
+    border-bottom: 1px dashed gainsboro;
+    padding: 5px 0 5px 0;
+}
+
+.content table tr td img {
+    padding: 5px;
+}
+
+.tag {
+    padding: 0;
+}
+
+.popTags {
+    margin-top: 54px;
+    /*padding: 12px 0 12px 0;*/
+    background: darkred;
+}
+
+
+/*all tag example*/
+
+.tag_entity {
+    height: 50px;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tag1,
+.tag3,
+.tag4 {
+    background: #415EC7;
+    margin: 5px;
+}
+
+.tag2,
+.tag6,
+.tag5 {
+    background: #7A90BA;
+    margin: 10px;
+}
+
+.tag4,
+.tag3,
+.tag5 {
+    height: 60px;
+    line-height: 30px;
+}
